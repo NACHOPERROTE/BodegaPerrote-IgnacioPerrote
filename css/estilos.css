@@ -1,0 +1,168 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+/** CAMBIAMOS LA MODIFICACION, APLICANDO IMPORT EN LA PARTE QUE QUERRAMOS CAMBIAR
+
+
+$Ejemplo(class que se modifico en el archivo .scss): red; (en este caso la modificacion era de color)
+en la pagina aplicamos $ejemplo
+
+
+**/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+.navbar {
+  background: black;
+  background: -moz-linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+  background: -webkit-linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+  background: linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); }
+
+.logoNav__imagen {
+  height: 8rem;
+  width: 8rem; }
+
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.642); }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+.accesosRapidos__imagen--img {
+  height: 15rem;
+  width: 22rem; }
+
+.sectionIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-image: url(../img/fondoindex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .sectionIndex__excursionTitulo {
+    background-color: rgba(255, 255, 255, 0.367);
+    margin-top: 3rem; }
+  .sectionIndex__excursionParrafo {
+    background-color: rgba(255, 255, 255, 0.367);
+    margin-top: 3rem; }
+  .sectionIndex__excursionPreguntas {
+    margin-top: 3rem; }
+  .sectionIndex__boton {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .sectionIndex__boton--btn {
+      background: black;
+      background: -moz-linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+      background: -webkit-linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+      background: linear-gradient(87deg, black 8%, #9b22c3 52%, black 93%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+      color: white;
+      padding: 0.5rem; }
+
+.accesosRapidos {
+  background-color: rgba(95, 157, 245, 0.557);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around; }
+  .accesosRapidos__uno {
+    margin-top: 2rem; }
+
+/**ejemplo map-get, mixin y extend**/
+.accesosRapidos__titulo--h1, .accesosRapidos__parrafo--p {
+  background-color: rgba(255, 255, 255, 0.306);
+  color: #4c4c4c; }
+
+.accesosRapidos__parrafo--p {
+  margin-top: 1rem; }
+
+.accesosRapidos__parrafo--p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.3rem; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+.footerGeneral {
+  height: 11rem;
+  background: black;
+  background: -moz-linear-gradient(0deg, black 5%, #9b22c3 100%);
+  background: -webkit-linear-gradient(0deg, black 5%, #9b22c3 100%);
+  background: linear-gradient(0deg, black 5%, #9b22c3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#9b22c3",GradientType=1); }
+  .footerGeneral__listaDatos--ul {
+    list-style: none;
+    padding: 0%;
+    display: inline; }
+  .footerGeneral__listaDatos--li {
+    display: inline; }
+  .footerGeneral__lista--img {
+    height: 3rem;
+    width: 3rem; }
+  .footerGeneral__listaRedes {
+    list-style: none;
+    display: inline; }
+  .footerGeneral__listaRedes--li {
+    display: inline; }
+
+/**ejemplo de mapa con each**/
+.footerGeneral__listaRedes--instagram {
+  color: violet; }
+
+.footerGeneral__listaRedes--facebook {
+  color: blue; }
+
+.footerGeneral__listaRedes--twitter {
+  color: #0091ff; }

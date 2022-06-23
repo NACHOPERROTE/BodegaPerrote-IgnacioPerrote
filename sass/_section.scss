@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+.accesosRapidos__imagen--img{
+    height: 15rem;
+    width: 22rem;
+}
+
+.sectionIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;    
+    background-image: url(../img/fondoindex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__excursionTitulo{
+        background-color: rgba(255, 255, 255, 0.367);
+        margin-top: 3rem;
+    }
+
+    &__excursionParrafo{
+        background-color: rgba(255, 255, 255, 0.367);
+        margin-top: 3rem;
+    }
+
+    &__excursionPreguntas{
+        margin-top: 3rem;
+    }
+
+    &__boton{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    &--btn{
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(87deg, rgba(0,0,0,1) 8%, rgba(155,34,195,1) 52%, rgba(0,0,0,1) 93%);
+        background: -webkit-linear-gradient(87deg, rgba(0,0,0,1) 8%, rgba(155,34,195,1) 52%, rgba(0,0,0,1) 93%);
+        background: linear-gradient(87deg, rgba(0,0,0,1) 8%, rgba(155,34,195,1) 52%, rgba(0,0,0,1) 93%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+        color: white;
+        padding: 0.5rem;
+
+}
+
+    }
+}
+
+.accesosRapidos{
+    background-color: rgba(95, 157, 245, 0.557);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+
+    &__uno{
+        margin-top: 2rem ;
+    }
+
+
+}
+
+/**ejemplo map-get, mixin y extend**/
+
+$accesosRapidos:(
+    color: rgb(76, 76, 76),
+    fondo: rgba(255, 255, 255, 0.306),
+    fuente: 1rem,
+    distancia: 1rem
+);
+
+.accesosRapidos__titulo--h1{
+    background-color: map-get($accesosRapidos, fondo);
+    color: map-get($accesosRapidos, color);
+}
+
+.accesosRapidos__parrafo--p{
+    @extend .accesosRapidos__titulo--h1;
+    margin-top: map-get($accesosRapidos, distancia);
+}
+
+@mixin ancho-alto{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+.accesosRapidos__parrafo--p{
+    @include ancho-alto;
+}

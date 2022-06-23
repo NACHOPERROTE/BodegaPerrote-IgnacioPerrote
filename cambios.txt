@@ -1,0 +1,6 @@
+Cambios realizados: 
+1°Agregado de mapa con earch en _footer
+2°Agregado de map-getp en _section
+3°Agregado de mixin en _section
+4°Agregado de extend en _section
+5°Agregado de meta keywords en index con palabras relacionadas al texto en el archivo mismo

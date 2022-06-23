@@ -1,0 +1,69 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+
+.footerGeneral{    
+    height: 11rem;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#9b22c3",GradientType=1);
+
+    &__listaDatos--ul{
+        list-style: none;
+        padding: 0%;
+        display: inline;
+    }
+
+    &__listaDatos--li{
+        display: inline;
+    }
+
+    &__lista--img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__listaRedes{
+        list-style: none;
+        display: inline;
+    }
+
+    &__listaRedes--li{
+        display: inline;
+    }
+
+    
+}
+
+
+
+
+/**ejemplo de mapa con each**/
+
+$redes:(
+
+    instagram: violet,
+    facebook: blue,
+    twitter: rgb(0, 145, 255),
+
+);
+
+@each $red, $color in $redes {
+    .footerGeneral__listaRedes--#{$red}{
+        color:$color;
+    }
+}

@@ -1,0 +1,23 @@
+/** CAMBIAMOS LA MODIFICACION, APLICANDO IMPORT EN LA PARTE QUE QUERRAMOS CAMBIAR
+
+
+$Ejemplo(class que se modifico en el archivo .scss): red; (en este caso la modificacion era de color)
+en la pagina aplicamos $ejemplo
+
+
+**/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
