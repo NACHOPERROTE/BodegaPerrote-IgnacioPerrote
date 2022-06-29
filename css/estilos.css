@@ -1,15 +1,3 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
-
-header {
-  position: sticky;
-  top: 0px; }
-
 /** CAMBIAMOS LA MODIFICACION, APLICANDO IMPORT EN LA PARTE QUE QUERRAMOS CAMBIAR
 
 
@@ -82,10 +70,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
   .sectionIndex__excursionTitulo {
-    background-color: rgba(255, 255, 255, 0.367);
+    background-color: rgba(255, 255, 255, 0.493);
     margin-top: 3rem; }
   .sectionIndex__excursionParrafo {
-    background-color: rgba(255, 255, 255, 0.367);
+    background-color: rgba(255, 255, 255, 0.61);
     margin-top: 3rem; }
   .sectionIndex__excursionPreguntas {
     margin-top: 3rem; }
@@ -123,6 +111,30 @@ header {
   font-weight: bold;
   padding: 0.3rem; }
 
+@media screen and (max-width: 380px) {
+  .sectionIndex__excursionTitulo--h1 {
+    font-size: 2rem;
+    text-align: center; }
+  .sectionIndex__excursionParrafo--p {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 768px) {
+  .sectionIndex__excursionTitulo--h1 {
+    font-size: 3.5rem;
+    text-align: center; }
+  .sectionIndex__excursionParrafo--p {
+    font-size: 2rem; }
+  .accesosRapidos {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .accesosRapidos__uno {
+      width: 60%; }
+    .accesosRapidos__dos {
+      width: 60%; }
+    .accesosRapidos__tres {
+      width: 60%; } }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -136,12 +148,20 @@ header {
   top: 0px; }
 
 .footerGeneral {
+  width: 100%;
   height: 11rem;
+  display: flex;
+  justify-content: center;
   background: black;
   background: -moz-linear-gradient(0deg, black 5%, #9b22c3 100%);
   background: -webkit-linear-gradient(0deg, black 5%, #9b22c3 100%);
   background: linear-gradient(0deg, black 5%, #9b22c3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#9b22c3",GradientType=1); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#9b22c3",GradientType=1);
+  /**footer texto**/
+  /**footer redes**/ }
+  .footerGeneral__Datos, .footerGeneral__texto, .footerGeneral__listaRedes {
+    border: 0.2rem solid black;
+    background-color: rgba(255, 255, 255, 0.349); }
   .footerGeneral__listaDatos--ul {
     list-style: none;
     padding: 0%;
@@ -150,8 +170,17 @@ header {
     display: inline; }
   .footerGeneral__lista--img {
     height: 3rem;
-    width: 3rem; }
-  .footerGeneral__listaRedes {
+    width: 3rem;
+    margin-right: 1rem; }
+  .footerGeneral__parrafo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0%;
+    padding: 0.3rem; }
+  .footerGeneral__listaRedes--ul {
     list-style: none;
     display: inline; }
   .footerGeneral__listaRedes--li {
@@ -159,10 +188,86 @@ header {
 
 /**ejemplo de mapa con each**/
 .footerGeneral__listaRedes--instagram {
-  color: violet; }
+  color: violet;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .footerGeneral__listaRedes--facebook {
-  color: blue; }
+  color: blue;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .footerGeneral__listaRedes--twitter {
-  color: #0091ff; }
+  color: #0091ff;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+@media screen and (max-width: 425px) {
+  .footerGeneral {
+    width: 100%;
+    height: auto;
+    /**lista datos**/
+    /**lista redes**/ }
+    .footerGeneral__row {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .footerGeneral__Datos, .footerGeneral__texto, .footerGeneral__listaRedes {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0.2rem solid black;
+      background-color: rgba(255, 255, 255, 0.349);
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .footerGeneral__listaDatos--ul {
+      list-style: none;
+      padding: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 0%; }
+    .footerGeneral__listaDatos--li {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem; }
+    .footerGeneral__listaRedes {
+      display: flex;
+      flex-direction: column; }
+    .footerGeneral__tituloRedes--h6 {
+      padding: 1rem;
+      margin: 0%;
+      font-size: 1.3rem; }
+    .footerGeneral__listaRedes--ul {
+      display: flex;
+      margin: 0%;
+      padding: 0rem 1rem 1rem 1rem;
+      font-size: 1.3rem; } }
+
+@media screen and (min-width: 768px) {
+  /**footer**/
+  .footerGeneral {
+    display: flex;
+    align-items: center; }
+    .footerGeneral__Datos, .footerGeneral__texto, .footerGeneral__listaRedes {
+      margin-right: 0.5rem;
+      width: 24rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+    .footerGeneral__listaDatos--ul {
+      list-style: none;
+      padding: 0%;
+      margin: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+    .footerGeneral__tituloRedes--h6 {
+      font-size: 1.5rem; }
+    .footerGeneral__listaRedes--ul {
+      font-size: 1.3rem;
+      margin: 0%;
+      padding: 0%; } }

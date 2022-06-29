@@ -15,12 +15,21 @@ header{
 
 
 .footerGeneral{    
+    width: 100%;
     height: 11rem;
+    display: flex;
+    justify-content: center;
+
     background: rgb(0,0,0);
     background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
     background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
     background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(155,34,195,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#9b22c3",GradientType=1);
+
+    &__Datos{
+        border: 0.2rem solid black;
+        background-color: rgba(255, 255, 255, 0.349);
+    }
 
     &__listaDatos--ul{
         list-style: none;
@@ -35,9 +44,32 @@ header{
     &__lista--img{
         height: 3rem;
         width: 3rem;
+        margin-right: 1rem;
     }
 
+    /**footer texto**/
+
+    &__texto{
+        @extend .footerGeneral__Datos;
+    }
+
+    &__parrafo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        align-items: center;
+        margin: 0%;
+        padding: 0.3rem;
+    }
+
+    /**footer redes**/
+
     &__listaRedes{
+        @extend .footerGeneral__Datos
+    }
+
+    &__listaRedes--ul{
         list-style: none;
         display: inline;
     }
@@ -65,5 +97,129 @@ $redes:(
 @each $red, $color in $redes {
     .footerGeneral__listaRedes--#{$red}{
         color:$color;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+
+
+    
+    .footerGeneral{    
+        width: 100%;
+        height: auto;  
+    
+        &__row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        /**lista datos**/
+
+        &__Datos{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0.2rem solid black;
+            background-color: rgba(255, 255, 255, 0.349);            
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__listaDatos--ul{
+            list-style: none;
+            padding: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 0%;
+        }
+    
+        &__listaDatos--li{
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+        }
+
+
+        /**lista redes**/
+
+        &__listaRedes{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__tituloRedes--h6{
+            padding: 1rem;
+            margin: 0%;
+            font-size: 1.3rem;
+        }
+
+        &__listaRedes--ul{
+            display: flex;
+            margin: 0%;
+            padding: 0rem 1rem 1rem 1rem;
+            font-size: 1.3rem;
+        }
+
+    }
+
+}
+@media screen and (min-width: 768px) {
+
+
+/**footer**/
+
+
+
+.footerGeneral{ 
+
+    display:flex;
+    align-items: center;
+
+
+
+    &__Datos{
+        
+        margin-right: 0.5rem;
+        width: 24rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+   
+    }
+
+    
+        &__listaDatos--ul{
+            list-style: none;
+            padding: 0%;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+           
+        }
+    
+        
+          
+        &__tituloRedes--h6{
+            font-size: 1.5rem;
+        
+        }
+
+        &__listaRedes--ul{
+            font-size: 1.3rem;
+            margin: 0%;
+            padding: 0%;
+        }
+}
+
+
+}
+

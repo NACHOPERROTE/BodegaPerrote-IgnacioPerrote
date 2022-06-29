@@ -29,12 +29,12 @@ header{
     background-size: cover;
 
     &__excursionTitulo{
-        background-color: rgba(255, 255, 255, 0.367);
+        background-color: rgba(255, 255, 255, 0.493);
         margin-top: 3rem;
     }
 
     &__excursionParrafo{
-        background-color: rgba(255, 255, 255, 0.367);
+        background-color: rgba(255, 255, 255, 0.61);
         margin-top: 3rem;
     }
 
@@ -101,4 +101,62 @@ $accesosRapidos:(
 
 .accesosRapidos__parrafo--p{
     @include ancho-alto;
+}
+
+@media screen and (max-width: 380px) {
+
+.sectionIndex{
+
+    &__excursionTitulo--h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__excursionParrafo--p{
+        font-size: 1.2rem;
+    }
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .sectionIndex{
+
+        &__excursionTitulo--h1{
+            font-size: 3.5rem;
+            text-align: center;
+        }
+    
+        &__excursionParrafo--p{
+            font-size: 2rem;
+        }
+    
+    
+    }    
+    
+
+
+
+    .accesosRapidos{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &__uno{
+            width: 60%;
+        }
+    
+        &__dos{
+            width: 60%;
+        }
+    
+        &__tres{
+            width: 60%;
+        }
+    
+    }
+
 }
