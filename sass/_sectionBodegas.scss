@@ -1,0 +1,186 @@
+.sectionBodegas{
+    background-image: url(../img/fondoindex.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  
+  
+  #carouselExampleCaptions{
+    box-shadow:  2rem 0.7rem 3rem 0.3rem black;
+    width: 50%;
+  }
+  
+  
+  .carousel-inner img{
+    height:80rem;
+    
+  }
+  
+  .carousel-inner h5 {
+    font-size: 5rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.444);
+  }
+  
+  .carousel-inner p {
+    font-size: 2rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.444);
+  }
+  
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+
+.sectionBodegas .carousel-inner h5 {
+    font-size: 2rem;
+}
+
+.sectionBodegas .carousel-inner p {
+    font-size: 1rem;
+}
+
+
+.carousel-inner{
+    height: 30rem;
+    
+}
+
+.sectionBodegas #carouselExampleCaptions {
+    width: 100%;
+}
+
+.sectionBodegas .carousel-inner img {
+    height: 30rem;
+}
+
+
+.d-none {
+    display: flex !important;
+    flex-direction: column; 
+}
+}
+@media screen and (min-width: 375px) {
+
+    .sectionBodegas .carousel-inner h5 {
+        font-size: 2rem;
+    }
+    
+    .sectionBodegas .carousel-inner p {
+        font-size: 1rem;
+    }
+    
+    
+    .carousel-inner{
+        height: 35rem;
+        
+    }
+    
+    .sectionBodegas #carouselExampleCaptions {
+        width: 90%;
+    }
+    
+    .sectionBodegas .carousel-inner img {
+        height: 35rem;
+    }
+    
+    
+    .d-none {
+        display: flex !important;
+        flex-direction: column; 
+    }
+
+}
+
+
+
+@media screen and (min-width: 425px) {
+
+
+
+    .sectionBodegas .carousel-inner h5 {
+        font-size: 2rem;
+    }
+    
+    .sectionBodegas .carousel-inner p {
+        font-size: 1rem;
+    }
+    
+    
+    .carousel-inner{
+        height: 35rem;
+        
+    }
+    
+    .sectionBodegas #carouselExampleCaptions {
+        width: 90%;
+    }
+    
+    .sectionBodegas .carousel-inner img {
+        height: 35rem;
+    }
+    
+    
+    .d-none {
+        display: flex !important;
+        flex-direction: column; 
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .carousel-inner{
+        height: 45rem;
+        
+    }
+    
+    .sectionBodegas #carouselExampleCaptions {
+        width: 60%;
+    }
+    
+    .sectionBodegas .carousel-inner img {
+        height: 45rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1600px) {
+
+    .carousel-inner{
+        height: 80rem;
+        
+    }
+    
+    .sectionBodegas #carouselExampleCaptions {
+        width: 60%;
+    }
+    
+    .sectionBodegas .carousel-inner img {
+        height: 80rem;
+    }
+
+    .sectionBodegas .carousel-inner h5 {
+        font-size: 4.5rem;
+    }
+    
+    .sectionBodegas .carousel-inner p {
+        font-size: 2.5rem;
+    }
+
+
+
+}

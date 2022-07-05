@@ -221,5 +221,72 @@ $redes:(
 }
 
 
+
 }
 
+
+@media screen and (min-width: 1024px) {
+
+
+.footerGeneral{
+    
+
+&__row{
+    width: 100%;
+    justify-content: space-around;
+}
+
+&__Datos{
+    width: 30rem;
+}
+
+
+}
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .footerGeneral{
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__Datos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48rem;
+  }
+
+    &__listaDatos--ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__listaDatos--li{
+        margin-left: 0.5rem;
+    }
+
+    &__texto{
+        width: 40rem;
+    }
+
+    &__listaRedes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__tituloRedes--h6{
+        margin-bottom: 0%;
+    }
+
+    &__lista--img{
+        margin-right: 0.3rem;
+    }
+
+    }
+}

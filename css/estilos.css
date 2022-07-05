@@ -118,22 +118,105 @@ header {
   .sectionIndex__excursionParrafo--p {
     font-size: 1.2rem; } }
 
+.accesosRapidos {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+@media screen and (min-width: 375px) {
+  .accesosRapidos {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem; } }
+
+@media screen and (min-width: 425px) {
+  .sectionIndex__excursionTitulo--h1 {
+    font-size: 2.6rem; }
+  .sectionIndex__excursionParrafo--p {
+    font-size: 1.5rem; }
+  .accesosRapidos {
+    padding-left: 10.1rem;
+    padding-right: 10.1rem; } }
+
 @media screen and (min-width: 768px) {
+  .sectionIndex__excursionTitulo {
+    width: 85%; }
   .sectionIndex__excursionTitulo--h1 {
     font-size: 3.5rem;
     text-align: center; }
+  .sectionIndex__excursionParrafo {
+    width: 75%; }
   .sectionIndex__excursionParrafo--p {
     font-size: 2rem; }
   .accesosRapidos {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .accesosRapidos__imagen--img {
+      height: 25rem;
+      width: 32rem; }
+    .accesosRapidos__dos, .accesosRapidos__uno, .accesosRapidos__tres {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%; }
+    .accesosRapidos__parrafo {
+      width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  .accesosRapidos {
+    padding: 0%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(212, 212, 212, 0.58); }
     .accesosRapidos__uno {
-      width: 60%; }
-    .accesosRapidos__dos {
-      width: 60%; }
+      width: 100%;
+      background-color: #b7ccf4;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .accesosRapidos__dos, .accesosRapidos__uno, .accesosRapidos__tres {
+      background-color: #b7ccf4;
+      padding: 1rem;
+      width: 100%;
+      height: auto;
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
     .accesosRapidos__tres {
-      width: 60%; } }
+      background-color: #b7ccf4;
+      padding: 1rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0.5rem; }
+    .accesosRapidos__titulo--h1, .accesosRapidos__parrafo--p {
+      font-size: 1.5rem; }
+    .accesosRapidos__parrafo--p {
+      font-size: 1.3rem; }
+    .accesosRapidos__imagen--img {
+      width: 15rem;
+      height: 15rem;
+      box-shadow: 1rem 0rem 1rem 0rem rgba(0, 0, 0, 0.422); }
+    .accesosRapidos__imagen--img:hover {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    100% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); } } }
 
 * {
   margin: 0%;
@@ -271,3 +354,679 @@ header {
       font-size: 1.3rem;
       margin: 0%;
       padding: 0%; } }
+
+@media screen and (min-width: 1024px) {
+  .footerGeneral__row {
+    width: 100%;
+    justify-content: space-around; }
+  .footerGeneral__Datos, .footerGeneral__texto, .footerGeneral__listaRedes {
+    width: 30rem; } }
+
+@media screen and (min-width: 1440px) {
+  .footerGeneral__row {
+    display: flex;
+    justify-content: space-between; }
+  .footerGeneral__Datos, .footerGeneral__texto, .footerGeneral__listaRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48rem; }
+  .footerGeneral__listaDatos--ul {
+    display: flex;
+    flex-direction: row; }
+  .footerGeneral__listaDatos--li {
+    margin-left: 0.5rem; }
+  .footerGeneral__texto {
+    width: 40rem; }
+  .footerGeneral__listaRedes {
+    display: flex;
+    flex-direction: row; }
+  .footerGeneral__tituloRedes--h6 {
+    margin-bottom: 0%; }
+  .footerGeneral__lista--img {
+    margin-right: 0.3rem; } }
+
+.sectionBodegas {
+  background-image: url(../img/fondoindex.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    box-shadow: 2rem 0.7rem 3rem 0.3rem black;
+    width: 50%; }
+  .sectionBodegas .carousel-inner img {
+    height: 80rem; }
+  .sectionBodegas .carousel-inner h5 {
+    font-size: 5rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.444); }
+  .sectionBodegas .carousel-inner p {
+    font-size: 2rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.444); }
+
+@media screen and (max-width: 320px) {
+  .sectionBodegas .carousel-inner h5 {
+    font-size: 2rem; }
+  .sectionBodegas .carousel-inner p {
+    font-size: 1rem; }
+  .carousel-inner {
+    height: 30rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    width: 100%; }
+  .sectionBodegas .carousel-inner img {
+    height: 30rem; }
+  .d-none {
+    display: flex !important;
+    flex-direction: column; } }
+
+@media screen and (min-width: 375px) {
+  .sectionBodegas .carousel-inner h5 {
+    font-size: 2rem; }
+  .sectionBodegas .carousel-inner p {
+    font-size: 1rem; }
+  .carousel-inner {
+    height: 35rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    width: 90%; }
+  .sectionBodegas .carousel-inner img {
+    height: 35rem; }
+  .d-none {
+    display: flex !important;
+    flex-direction: column; } }
+
+@media screen and (min-width: 425px) {
+  .sectionBodegas .carousel-inner h5 {
+    font-size: 2rem; }
+  .sectionBodegas .carousel-inner p {
+    font-size: 1rem; }
+  .carousel-inner {
+    height: 35rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    width: 90%; }
+  .sectionBodegas .carousel-inner img {
+    height: 35rem; }
+  .d-none {
+    display: flex !important;
+    flex-direction: column; } }
+
+@media screen and (min-width: 768px) {
+  .carousel-inner {
+    height: 45rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    width: 60%; }
+  .sectionBodegas .carousel-inner img {
+    height: 45rem; } }
+
+@media screen and (min-width: 1600px) {
+  .carousel-inner {
+    height: 80rem; }
+  .sectionBodegas #carouselExampleCaptions {
+    width: 60%; }
+  .sectionBodegas .carousel-inner img {
+    height: 80rem; }
+  .sectionBodegas .carousel-inner h5 {
+    font-size: 4.5rem; }
+  .sectionBodegas .carousel-inner p {
+    font-size: 2.5rem; } }
+
+
+    /** ESTILOS SIN EDICION */
+
+
+
+    .redireccionamientoCompras {
+      grid-area: redireccionamiento;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 2rem;
+    }
+    
+    .mainCompras{
+      background-color: rgb(224, 222, 222);
+    }
+    
+    .articleCompras {
+      display: grid; 
+      grid-template-columns: 1fr 3fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 10px; 
+      grid-template-areas: 
+        "copaIzquierda copasCentro copasDerecha"
+        "vinos vinos vinos"; 
+    }
+    
+    .copaIzquierda { grid-area: copaIzquierda;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+     
+    }
+    
+    .copaIzquierda__fondo{
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 50rem;
+    }
+    
+    .copa__titulo{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .copa__parrafo{
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 1rem;
+    }
+    
+    
+    .copasCentro { grid-area: copasCentro;
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      width: 100%;
+    }
+    
+    .copasCentro__izquierda{
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      width: 35%;
+      height: 50rem;
+      text-align: center;
+      align-items: center;
+      margin-left: 7rem;
+    
+    }
+    
+    
+    .copasCentro__derecha{
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      width: 35%;
+      height: 50rem;
+      text-align: center;
+      align-items: center;
+      margin-right: 7rem;
+    }
+    
+    
+    
+    
+    .copasDerecha { grid-area: copasDerecha;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    .copaDerecha__fondo{
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 50rem;
+    }
+    
+    
+    
+    .articleCompras__copas--img{
+        height: 30rem;
+        width: 20rem;
+    }
+    
+    /*sector vinos*/
+    
+    .vinos{
+        grid-area: vinos;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+      
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .vinoIzquierda{
+        width: 30%;
+        height: 75rem;
+        background-color: white;
+    }
+    
+    
+    .vinoCentro{
+        width: 30%;
+        height: 75rem;
+        background-color: white;
+    }
+    
+    
+    .vinoDerecha{
+        width: 30%;
+        height: 75rem;
+        background-color: white;
+      }
+
+
+      .mainVinos{
+        background-image: url(../img/fondovinos.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .vinosTitulo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 10rem;
+    }
+    
+    .vinosTitulo__h1{
+      font-size: 6rem;
+      color: white;
+      text-shadow: 1rem 1rem 1rem black;
+    }
+    
+    .articleVinos {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+          "vinoUno vinoTres"
+          "vinoDos vinoTres";  
+        
+        }
+    
+    .vinoUno { grid-area: vinoUno;
+        background-color: rgba(255, 255, 255, 0.571); 
+        display: flex;
+        width: 100%;
+    
+    }
+    
+    .vinoUno:hover {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.04);
+                  transform: scale(1.04);
+        }
+      }
+    
+    
+    
+    .vinoDos { grid-area: vinoDos;
+        background-color: rgba(255, 255, 255, 0.571); 
+        display: flex;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .vinoDos:hover {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.04);
+                  transform: scale(1.04);
+        }
+      }
+    
+    
+    
+    .vinoTres { grid-area: vinoTres; 
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .vinoTres__Contenedor:hover {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.04);
+                  transform: scale(1.04);
+        }
+      }
+    
+    
+    .vinoTres__Contenedor{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.571); 
+        height: 50%;
+        
+        
+    }
+    
+    .vino__imagen{
+        display: flex;
+        width: 40%;
+    }
+    
+    .vino__titulo{
+        display: flex;
+        width:35%;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .vino__titulo--h3{
+        font-size: 3.5rem;
+    }
+    
+    .vino__parrafo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+    /**pagina Logistica**/
+    
+    /**header**/
+    
+    .navGrid {
+      display: grid; 
+      grid-template-columns: 2fr 1fr 2fr; 
+      grid-template-rows: 0.2fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "ingreso logo redireccionamiento"; 
+    
+    }
+    .ingreso {
+      grid-area: ingreso;
+      display: flex; 
+      height: 5rem;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nav__ingreso--input{
+      height: 4rem;
+      width: 19rem;
+      margin-right:5rem;
+      border: 0.2rem solid black;
+    }
+    
+      
+    
+    
+    .logo { 
+        grid-area: logo;
+        display: flex;
+        align-items:center; 
+        justify-content: center; 
+      }
+    
+    
+    
+    
+    .redireccionamiento {
+          grid-area: redireccionamiento;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: 15rem;
+          margin-right: 2rem;
+      }
+    
+    .nav__redireccionamiento--ul{
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      border: 0.5rem solid black;
+      height: 5rem;
+      align-items: center;
+      }   
+    
+    .nav__redireccionamiento--a{
+      font-size: 2.5rem;
+      text-decoration: none;
+      margin: 0.7rem;
+    }
+    
+    /**main Logistica**/
+    
+    .mainLogistica__titulo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem;
+      background-color: rgba(255, 255, 255, 0.636);
+      margin-bottom: 2rem;
+      height: 10rem;
+    }
+    
+    .mainLogistica__titulo--h1{
+      font-size: 3.8rem;
+      font-family: 'Italianno', cursive;
+    }
+    
+    .mapa__imagen{
+      background-color: rgba(255, 255, 255, 0.478);
+    }
+    
+    .articleLogistica__form--img{
+      height: 15rem;
+      width: 15rem;
+    }
+    
+    
+    .mainLogistica{
+      background-image: url(../img/camion.jpg);
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size: cover;
+          
+    }
+    
+    .articleLogistica {
+      display: grid; 
+      grid-template-columns: 1fr 1.5fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "mapa informacion"; 
+    }
+    .mapa {
+         grid-area: mapa; 
+         display: flex;
+         justify-content: end;
+         align-items: center;
+         margin-right: 10rem;
+    }
+    
+    
+    .formularioLogistica { 
+        grid-area: informacion;
+        display: flex;
+        align-items: center;
+      }
+    
+    
+    .formularioLogistica__form{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .formularioLogistica__envio {
+      display: grid; 
+      grid-template-columns: 0.5fr 1fr; 
+      grid-template-rows: 0.5fr; 
+      gap: 0px 5px; 
+      grid-template-areas: 
+        "imagen select"; 
+        background-color: rgba(255, 255, 255, 0.669);
+    }
+    .formularioLogistica__envioImagen {
+         grid-area: imagen; }
+    
+    .formularioLogistica__envioSelect {
+         grid-area: select; 
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         margin: 0.5rem;
+      }
+    
+    .formularioLogistica__envio--label{
+       font-size: 2.5rem;
+    }
+    
+    
+    .formularioLogistica__fecha {
+      display: grid; 
+      grid-template-columns: 0.5fr 1fr; 
+      grid-template-rows: 0.5fr; 
+      gap: 0px 5px; 
+      grid-template-areas: 
+        "imagen select"; 
+        background-color: rgba(255, 255, 255, 0.669);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+    .formularioLogistica__fechaSelect {
+      grid-area: select; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.5rem;
+    }
+    
+    /**formulario logistica consultas*/
+    
+    .formularioLogistica__consultas {
+      display: grid; 
+      grid-template-columns: 0.5fr 1fr; 
+      grid-template-rows: 0.5fr; 
+      gap: 0px 5px; 
+      grid-template-areas: 
+        "imagen select"; 
+        background-color: rgba(255, 255, 255, 0.669);
+      }
+    
+    .formularioLogistica__consultasSelect {
+      grid-area: select; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.5rem;
+    }
+    
+    
+    /**CONTACTO**/
+    
+    .mainContacto{
+       background-image:url(../img/marmol2.jpg);
+       background-repeat:repeat;
+       background-size: cover;
+    }
+    
+    .formularioRegistro{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .section__datosPersonales{
+      background-color: rgba(55, 4, 103, 0.802);    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20rem;
+      margin-bottom:20rem;
+      height: 70rem;
+      width: 50rem;
+      justify-content: space-around;
+      padding: 0rem 3rem 3rem 3rem;
+    
+    }
+    
+    .section__datosPersonales--h1{
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      color: white;
+    }
+    
+    .formContacto{
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+    }
+    
+    .formSections{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.616);
+      padding: 1rem;
+      border: 0.3rem solid black;
+    }
+    
+    .formSections__titulo{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .formSections__inputs{
+      height: 3.5rem;
+      width: 25rem;
+    }
