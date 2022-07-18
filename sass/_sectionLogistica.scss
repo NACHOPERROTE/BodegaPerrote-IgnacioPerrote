@@ -1,0 +1,300 @@
+/**main Logistica**/
+  
+.logistica{
+    background-image: url(../img/camion.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+
+  &__titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.636);
+    height: 10rem;
+    }
+  
+    &__titulo--h1{
+        font-size: 3.8rem;
+        font-family: 'Italianno', cursive;
+      }
+
+    &__contenido{
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__imagen {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 10rem;
+   }
+
+   &__imagen--img{
+    background-color: rgba(255, 255, 255, 0.478);
+  }
+
+  &__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+&__formularioEnvio {
+  display: flex;
+  justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.669);
+}
+
+
+&__envioSelect {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     margin: 0.5rem;
+  }
+
+&__envio--label{
+   font-size: 2.5rem;
+}
+
+
+&__formularioFecha {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.669);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+    }
+
+
+    &__fechaSelect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.5rem;
+      }
+
+
+      &__form--img{
+        height: 12rem;
+        width: 12rem;
+        padding: 1rem;
+      }
+
+
+      &__consultas {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.669);
+        justify-content: space-around;
+        align-items: center;
+        }
+
+
+        &__consultasSelect {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0.5rem;
+          }
+
+
+        &__consultas--texarea{
+            margin-bottom: 1rem;
+        }
+
+}
+
+
+@media screen and (max-width: 1024px) {  
+
+    .logistica{
+
+
+        &__titulo{
+            padding: 0rem;
+            height: auto;
+        }
+    
+    
+        &__titulo--h1{
+            font-size: 2rem;
+            margin: 0%;
+            padding: 1rem;
+        }
+    
+        &__imagen{
+            margin-right: 4rem;
+        }
+
+        &__imagen--img{
+            display: flex;
+            width: 23rem;
+        }
+    
+
+    
+    }
+    
+    }
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {  
+
+    .logistica{
+
+        &__formulario{
+            display: flex;
+            align-items: center;
+        }
+
+        &__titulo{
+            padding: 0rem;
+            height: auto;
+        }
+    
+    
+        &__titulo--h1{
+            font-size: 2rem;
+            margin: 0%;
+            padding: 1rem;
+        }
+    
+        &__imagen{
+            margin-right: 4rem;
+        }
+
+        &__imagen--img{
+            display: flex;
+            width: 23rem;
+        }
+    
+
+    
+    }
+    
+    }
+
+
+
+    @media screen and (max-width: 425px) {  
+
+    .logistica{
+
+        &__formulario{
+            display: flex;
+            align-items: center;
+        }
+
+        &__titulo{
+            padding: 0rem;
+            height: auto;
+        }
+    
+    
+        &__titulo--h1{
+            font-size: 2rem;
+            margin: 0%;
+            padding: 1rem;
+        }
+    
+        &__imagen--img{
+            display: none;
+        }
+    
+
+    
+    }
+    
+    }
+  
+
+   
+
+    @media screen and (max-width: 425px) {  
+
+        .logistica{
+    
+            &__formulario{
+                display: flex;
+                align-items: center;
+            }
+    
+            &__titulo{
+                padding: 0rem;
+                height: auto;
+            }
+        
+        
+            &__titulo--h1{
+                font-size: 2rem;
+                margin: 0%;
+                padding: 1rem;
+            }
+        
+            &__imagen--img{
+                display: none;
+            }
+        
+    
+        
+        }
+        
+        }
+      
+    
+       
+    
+      
+
+
+
+
+@media screen and (max-width: 320px) {
+
+
+.logistica{
+
+    &__titulo{
+        padding: 0rem;
+        height: auto;
+    }
+
+
+    &__titulo--h1{
+        font-size: 2rem;
+        margin: 0%;
+        padding: 1rem;
+    }
+
+    &__imagen--img{
+        display: none;
+    }
+
+
+}
+
+}
+
+  
+
+  
+  
+  
+ 
+  
+ 

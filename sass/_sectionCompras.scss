@@ -1,0 +1,87 @@
+/**PAGINA COMPRAS**/
+
+
+/*sector copas*/
+  
+  .mainCompras{
+    background-color: #C8B8DB;
+  }
+  
+  .compras {
+    display: flex;
+    justify-content: space-around;
+      
+      &__copaCaja{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  
+        background-color: #F9F4F5;
+        text-align: center;
+        height: 50rem;
+        width: 35rem;
+        margin: 1rem 0rem 1rem 0rem;
+        padding: 0%;
+        border: 0.3rem solid rgba(221, 192, 154, 0.726);
+
+      }
+      
+      &__parrafo{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        height: 25rem;
+    }
+  
+    &__vinoCaja{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  
+        background-color: #F9F4F5;
+        text-align: center;
+        height: 55rem;
+        width: 35rem;
+        margin: 1rem 0rem 1rem 0rem;
+        padding: 0%;
+        border: 0.3rem solid rgba(221, 192, 154, 0.726);
+      }
+
+      &__titulo{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      &__imgVino{
+        width: 20rem;
+        height: 35rem;
+      }
+
+      &__copas--img{
+        height: 30rem;
+        width: 20rem;
+    }
+
+    }
+  
+    @media screen and (max-width: 320px) {
+
+        .compras{
+
+        &__copaCaja{
+            height: 65rem;
+            width: 30rem;
+          }
+
+
+
+        &__vinoCaja{
+            height: 65rem;
+            width: 30rem;
+          }
+    
+        }
+
+
+    }

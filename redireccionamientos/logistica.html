@@ -47,32 +47,39 @@
           </nav>
     </header>
 
-<main class="mainLogistica">
-    <div class="mainLogistica__titulo">
-        <h1 class="mainLogistica__titulo--h1">Nuestros Servicios de Logistica le Brindaran la Seguridad y Comodida que necesita para su Negocio</h1>
+<main class="logistica">
+    <div class="logistica__titulo">
+        <h1 class="logistica__titulo--h1">Nuestros Servicios de Logistica le Brindaran la Seguridad y Comodida que necesita para su Negocio</h1>
     </div>
-    
-    <section>
-        <article  class="articleLogistica">
-           
-                <div class="mapa">
-                    <img src="../img/mapa_sedes.png" alt="mapa" class="mapa__imagen">
-                </div>
+  <section> 
 
-                <div class="formularioLogistica">
+  <div class="container-fluid logistica__contenido">
+    <div class="row">
+      <div class="col-md-6 logistica__mapa">
+    
+        <article>
+           
+                <div class="logistica__imagen">
+                    <img src="../img/mapa_sedes.png" alt="mapa" class="logistica__imagen--img">
+                </div>
+      </div>
+
+      <div class="col-md-6 logistica__formulario">
+
+                <div class="logistica__formulario--div">
                     
                     <form action="" method="get" target="" class="formularioLogistica__form">
                     
-                        <div class="formularioLogistica__envio">
+                        <div class="logistica__formularioEnvio">
                             
-                            <div class="formularioLogisitca__envioImagen">
-                                <img src="../img/camion.png" alt="camionenvio" class="articleLogistica__form--img">
+                            <div class="logisitca__envioImagen">
+                                <img src="../img/camion.png" alt="camionenvio" class="logistica__form--img">
                             </div>
                             
-                            <div class="formularioLogistica__envioSelect">
-                                <label for="envio" class="formularioLogistica__envio--label">Tipo de envio</label>
+                            <div class="logistica__envioSelect">
+                                <label for="envio" class="logistica__envio--label">Tipo de envio</label>
                         
-                                    <select name="envio" id="envio" multiple  class="formularioLogistica__select" >
+                                    <select name="envio" id="envio" multiple>
                                         <option value="Retiro" label="Retiro"></option>
                                         <option label="Expreso" value="Expreso"></option>
                                         <option label="Domicilio" value="Domicilio"></option>
@@ -82,41 +89,40 @@
                             </div>
                         </div>
                         
-                        <div class="formularioLogistica__fecha">
-                            <div class="formularioLogistica__fechaImagen">
-                                <img src="../img/calendario.png" alt="calendario"  class="articleLogistica__form--img">
+                        <div class="logistica__formularioFecha">
+                            <div class="logistica__fechaImagen">
+                                <img src="../img/calendario.png" alt="calendario"  class="logistica__form--img">
                             </div>
 
-                            <div class="formularioLogistica__fechaSelect">
-                                <label for="calendario" class="formularioLogistica__envio--label">Fecha de Entrega</label>
+                            <div class="logistica__fechaSelect">
+                                <label for="calendario" class="logistica__envio--label">Dia de Entrega</label>
                                 <input type="date">
                                 <button type="submit" class="btn">Confirmar</button>
                             </div>
                         </div>
                     
-                        <div class="formularioLogistica__consultas">
-                            <div class="formulagioLogistica__consultasImagen">
-                                <img src="../img/interrogacion.png" alt="interrogacion"  class="articleLogistica__form--img">
+                        <div class="logistica__consultas">
+                            <div class="logistica__consultasImagen">
+                                <img src="../img/interrogacion.png" alt="interrogacion"  class="logistica__form--img">
                             </div>
 
-                            <div class="formularioLogistica__consultasSelect">
-                                <label for="consulta" class="formularioLogistica__envio--label">Consultas</label>
-                                <textarea name="" id="" cols="25" rows="4.5"></textarea>
+                            <div class="logistica__consultasSelect">
+                                <label for="consulta" class="logistica__envio--label">Consultas</label>
+                                <textarea name="" id="" cols="25" rows="4.5" class="logistica__consultas--texarea"></textarea>
 
                                 <button type="submit" class="btn">Enviar</button>
                             </div>
                         </div>
                     </form>
 
-                </div>
-            
+               
+      </div>
+    </div>           
+  </div>    
         </article>
     </section>
 </main>
 
-<aside>
-
-</aside>
 
 <footer>
        

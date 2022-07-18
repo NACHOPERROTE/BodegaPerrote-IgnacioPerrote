@@ -476,557 +476,366 @@ header {
   .sectionBodegas .carousel-inner p {
     font-size: 2.5rem; } }
 
+.mainVino {
+  background-image: url(../img/fondovinos.jpg);
+  background-position: center;
+  background-size: cover; }
 
-    /** ESTILOS SIN EDICION */
+.vinosTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 10rem; }
 
+.vinosTitulo__h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: white;
+  text-shadow: 1rem 1rem 1rem black; }
 
+.vino__imagen--img {
+  height: 25rem;
+  width: 18rem;
+  margin-top: 1rem;
+  border: 0.3rem solid rgba(221, 192, 154, 0.726); }
 
-    .redireccionamientoCompras {
-      grid-area: redireccionamiento;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-right: 2rem;
-    }
-    
-    .mainCompras{
-      background-color: rgb(224, 222, 222);
-    }
-    
-    .articleCompras {
-      display: grid; 
-      grid-template-columns: 1fr 3fr 1fr; 
-      grid-template-rows: 1fr 1fr; 
-      gap: 0px 10px; 
-      grid-template-areas: 
-        "copaIzquierda copasCentro copasDerecha"
-        "vinos vinos vinos"; 
-    }
-    
-    .copaIzquierda { grid-area: copaIzquierda;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;  
-     
-    }
-    
-    .copaIzquierda__fondo{
-      display: flex;
-      background-color: white;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 50rem;
-    }
-    
-    .copa__titulo{
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    
-    .copa__parrafo{
-      font-size: 1.5rem;
-      padding: 1rem;
-      margin: 1rem;
-    }
-    
-    
-    .copasCentro { grid-area: copasCentro;
-      display: flex;
-      align-items: center;
-      justify-content:space-around;
-      width: 100%;
-    }
-    
-    .copasCentro__izquierda{
-      display: flex;
-      background-color: white;
-      flex-direction: column;
-      width: 35%;
-      height: 50rem;
-      text-align: center;
-      align-items: center;
-      margin-left: 7rem;
-    
-    }
-    
-    
-    .copasCentro__derecha{
-      display: flex;
-      background-color: white;
-      flex-direction: column;
-      width: 35%;
-      height: 50rem;
-      text-align: center;
-      align-items: center;
-      margin-right: 7rem;
-    }
-    
-    
-    
-    
-    .copasDerecha { grid-area: copasDerecha;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    
-    .copaDerecha__fondo{
-      display: flex;
-      background-color: white;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: 50rem;
-    }
-    
-    
-    
-    .articleCompras__copas--img{
-        height: 30rem;
-        width: 20rem;
-    }
-    
-    /*sector vinos*/
-    
-    .vinos{
-        grid-area: vinos;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-      
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .vinoIzquierda{
-        width: 30%;
-        height: 75rem;
-        background-color: white;
-    }
-    
-    
-    .vinoCentro{
-        width: 30%;
-        height: 75rem;
-        background-color: white;
-    }
-    
-    
-    .vinoDerecha{
-        width: 30%;
-        height: 75rem;
-        background-color: white;
-      }
+.vino__imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
+.vino__Uno {
+  background-color: rgba(255, 255, 255, 0.571);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-      .mainVinos{
-        background-image: url(../img/fondovinos.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .vinosTitulo{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 10rem;
-    }
-    
-    .vinosTitulo__h1{
-      font-size: 6rem;
-      color: white;
-      text-shadow: 1rem 1rem 1rem black;
-    }
-    
-    .articleVinos {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 20px 20px; 
-        grid-template-areas: 
-          "vinoUno vinoTres"
-          "vinoDos vinoTres";  
-        
-        }
-    
-    .vinoUno { grid-area: vinoUno;
-        background-color: rgba(255, 255, 255, 0.571); 
-        display: flex;
-        width: 100%;
-    
-    }
-    
-    .vinoUno:hover {
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-      @keyframes scale-up-center {
-        0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-        }
-        100% {
-          -webkit-transform: scale(1.04);
-                  transform: scale(1.04);
-        }
-      }
-    
-    
-    
-    .vinoDos { grid-area: vinoDos;
-        background-color: rgba(255, 255, 255, 0.571); 
-        display: flex;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    
-    .vinoDos:hover {
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-      @keyframes scale-up-center {
-        0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-        }
-        100% {
-          -webkit-transform: scale(1.04);
-                  transform: scale(1.04);
-        }
-      }
-    
-    
-    
-    .vinoTres { grid-area: vinoTres; 
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .vinoTres__Contenedor:hover {
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-      @keyframes scale-up-center {
-        0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-        }
-        100% {
-          -webkit-transform: scale(1.04);
-                  transform: scale(1.04);
-        }
-      }
-    
-    
-    .vinoTres__Contenedor{
-        display: flex;
-        background-color: rgba(255, 255, 255, 0.571); 
-        height: 50%;
-        
-        
-    }
-    
-    .vino__imagen{
-        display: flex;
-        width: 40%;
-    }
-    
-    .vino__titulo{
-        display: flex;
-        width:35%;
-        padding-left: 1rem;
-        padding-top: 2rem;
-    }
-    
-    .vino__titulo--h3{
-        font-size: 3.5rem;
-    }
-    
-    .vino__parrafo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        padding: 2rem;
-        text-align: center;
-    }
-    
-    
-    
-    
-    
-    
-    /**pagina Logistica**/
-    
-    /**header**/
-    
-    .navGrid {
-      display: grid; 
-      grid-template-columns: 2fr 1fr 2fr; 
-      grid-template-rows: 0.2fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        "ingreso logo redireccionamiento"; 
-    
-    }
-    .ingreso {
-      grid-area: ingreso;
-      display: flex; 
-      height: 5rem;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .nav__ingreso--input{
-      height: 4rem;
-      width: 19rem;
-      margin-right:5rem;
-      border: 0.2rem solid black;
-    }
-    
-      
-    
-    
-    .logo { 
-        grid-area: logo;
-        display: flex;
-        align-items:center; 
-        justify-content: center; 
-      }
-    
-    
-    
-    
-    .redireccionamiento {
-          grid-area: redireccionamiento;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-left: 15rem;
-          margin-right: 2rem;
-      }
-    
-    .nav__redireccionamiento--ul{
-      display: flex;
-      list-style: none;
-      flex-wrap: wrap;
-      border: 0.5rem solid black;
-      height: 5rem;
-      align-items: center;
-      }   
-    
-    .nav__redireccionamiento--a{
-      font-size: 2.5rem;
-      text-decoration: none;
-      margin: 0.7rem;
-    }
-    
-    /**main Logistica**/
-    
-    .mainLogistica__titulo{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5rem;
-      background-color: rgba(255, 255, 255, 0.636);
-      margin-bottom: 2rem;
-      height: 10rem;
-    }
-    
-    .mainLogistica__titulo--h1{
-      font-size: 3.8rem;
-      font-family: 'Italianno', cursive;
-    }
-    
-    .mapa__imagen{
-      background-color: rgba(255, 255, 255, 0.478);
-    }
-    
-    .articleLogistica__form--img{
-      height: 15rem;
-      width: 15rem;
-    }
-    
-    
-    .mainLogistica{
-      background-image: url(../img/camion.jpg);
-      background-position: center;
-      background-repeat:no-repeat;
-      background-size: cover;
-          
-    }
-    
-    .articleLogistica {
-      display: grid; 
-      grid-template-columns: 1fr 1.5fr; 
-      grid-template-rows: 1fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        "mapa informacion"; 
-    }
-    .mapa {
-         grid-area: mapa; 
-         display: flex;
-         justify-content: end;
-         align-items: center;
-         margin-right: 10rem;
-    }
-    
-    
-    .formularioLogistica { 
-        grid-area: informacion;
-        display: flex;
-        align-items: center;
-      }
-    
-    
-    .formularioLogistica__form{
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .formularioLogistica__envio {
-      display: grid; 
-      grid-template-columns: 0.5fr 1fr; 
-      grid-template-rows: 0.5fr; 
-      gap: 0px 5px; 
-      grid-template-areas: 
-        "imagen select"; 
-        background-color: rgba(255, 255, 255, 0.669);
-    }
-    .formularioLogistica__envioImagen {
-         grid-area: imagen; }
-    
-    .formularioLogistica__envioSelect {
-         grid-area: select; 
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: space-between;
-         margin: 0.5rem;
-      }
-    
-    .formularioLogistica__envio--label{
-       font-size: 2.5rem;
-    }
-    
-    
-    .formularioLogistica__fecha {
-      display: grid; 
-      grid-template-columns: 0.5fr 1fr; 
-      grid-template-rows: 0.5fr; 
-      gap: 0px 5px; 
-      grid-template-areas: 
-        "imagen select"; 
-        background-color: rgba(255, 255, 255, 0.669);
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-    
-    .formularioLogistica__fechaSelect {
-      grid-area: select; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0.5rem;
-    }
-    
-    /**formulario logistica consultas*/
-    
-    .formularioLogistica__consultas {
-      display: grid; 
-      grid-template-columns: 0.5fr 1fr; 
-      grid-template-rows: 0.5fr; 
-      gap: 0px 5px; 
-      grid-template-areas: 
-        "imagen select"; 
-        background-color: rgba(255, 255, 255, 0.669);
-      }
-    
-    .formularioLogistica__consultasSelect {
-      grid-area: select; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0.5rem;
-    }
-    
-    
-    /**CONTACTO**/
-    
-    .mainContacto{
-       background-image:url(../img/marmol2.jpg);
-       background-repeat:repeat;
-       background-size: cover;
-    }
-    
-    .formularioRegistro{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .section__datosPersonales{
-      background-color: rgba(55, 4, 103, 0.802);    
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20rem;
-      margin-bottom:20rem;
-      height: 70rem;
-      width: 50rem;
-      justify-content: space-around;
-      padding: 0rem 3rem 3rem 3rem;
-    
-    }
-    
-    .section__datosPersonales--h1{
-      height: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2.5rem;
-      color: white;
-    }
-    
-    .formContacto{
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 80%;
-    }
-    
-    .formSections{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.616);
-      padding: 1rem;
-      border: 0.3rem solid black;
-    }
-    
-    .formSections__titulo{
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    
-    .formSections__inputs{
-      height: 3.5rem;
-      width: 25rem;
-    }
+.vino__Uno:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02); } }
+
+.vino__titulo {
+  margin-top: 2rem; }
+
+.vino__titulo--h3 {
+  font-size: 3rem;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: center; }
+
+.vino__parrafo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center; }
+
+.vino__Dos {
+  background-color: rgba(255, 255, 255, 0.571);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+
+.vino__Dos:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02); } }
+
+.vino__Tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.571);
+  margin-bottom: 2rem; }
+
+.vino__Tres:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02); } }
+
+@media screen and (min-width: 768px) {
+  .vino__derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+/**main Logistica**/
+.logistica {
+  background-image: url(../img/camion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .logistica__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.636);
+    height: 10rem; }
+  .logistica__titulo--h1 {
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive; }
+  .logistica__contenido {
+    margin-top: 2rem;
+    padding-bottom: 2rem; }
+  .logistica__imagen {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10rem; }
+  .logistica__imagen--img {
+    background-color: rgba(255, 255, 255, 0.478); }
+  .logistica__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .logistica__formularioEnvio {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.669); }
+  .logistica__envioSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem; }
+  .logistica__envio--label {
+    font-size: 2.5rem; }
+  .logistica__formularioFecha {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.669);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-around; }
+  .logistica__fechaSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem; }
+  .logistica__form--img {
+    height: 12rem;
+    width: 12rem;
+    padding: 1rem; }
+  .logistica__consultas {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.669);
+    justify-content: space-around;
+    align-items: center; }
+  .logistica__consultasSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem; }
+  .logistica__consultas--texarea {
+    margin-bottom: 1rem; }
+
+@media screen and (max-width: 1024px) {
+  .logistica__titulo {
+    padding: 0rem;
+    height: auto; }
+  .logistica__titulo--h1 {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 1rem; }
+  .logistica__imagen {
+    margin-right: 4rem; }
+  .logistica__imagen--img {
+    display: flex;
+    width: 23rem; } }
+
+@media screen and (max-width: 768px) {
+  .logistica__formulario {
+    display: flex;
+    align-items: center; }
+  .logistica__titulo {
+    padding: 0rem;
+    height: auto; }
+  .logistica__titulo--h1 {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 1rem; }
+  .logistica__imagen {
+    margin-right: 4rem; }
+  .logistica__imagen--img {
+    display: flex;
+    width: 23rem; } }
+
+@media screen and (max-width: 425px) {
+  .logistica__formulario {
+    display: flex;
+    align-items: center; }
+  .logistica__titulo {
+    padding: 0rem;
+    height: auto; }
+  .logistica__titulo--h1 {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 1rem; }
+  .logistica__imagen--img {
+    display: none; } }
+
+@media screen and (max-width: 425px) {
+  .logistica__formulario {
+    display: flex;
+    align-items: center; }
+  .logistica__titulo {
+    padding: 0rem;
+    height: auto; }
+  .logistica__titulo--h1 {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 1rem; }
+  .logistica__imagen--img {
+    display: none; } }
+
+@media screen and (max-width: 320px) {
+  .logistica__titulo {
+    padding: 0rem;
+    height: auto; }
+  .logistica__titulo--h1 {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 1rem; }
+  .logistica__imagen--img {
+    display: none; } }
+
+.mainContacto {
+  background-image: url(../img/marmol2.jpg);
+  background-repeat: repeat;
+  background-size: cover; }
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto__datosPersonales {
+    background-color: rgba(55, 4, 103, 0.802);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    height: 70rem;
+    width: 50rem;
+    justify-content: space-around;
+    padding: 0rem 3rem 3rem 3rem; }
+  .contacto__form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%; }
+  .contacto__datosPersonales--h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem; }
+  .contacto__formSections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 1rem;
+    border: 0.3rem solid black; }
+  .contacto__formSections--h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .contacto__formSections--inputs {
+    height: 3.5rem;
+    width: 25rem; }
+  .contacto__btn {
+    font-size: 2rem; }
+
+@media screen and (max-width: 425px) {
+  .contacto__datosPersonales {
+    width: auto;
+    padding: 0rem 0rem 1rem 0rem; }
+  .contacto__formSections--inputs {
+    width: 20rem; } }
+
+/**PAGINA COMPRAS**/
+/*sector copas*/
+.mainCompras {
+  background-color: #C8B8DB; }
+
+.compras {
+  display: flex;
+  justify-content: space-around; }
+  .compras__copaCaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F4F5;
+    text-align: center;
+    height: 50rem;
+    width: 35rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0%;
+    border: 0.3rem solid rgba(221, 192, 154, 0.726); }
+  .compras__parrafo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 25rem; }
+  .compras__vinoCaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F4F5;
+    text-align: center;
+    height: 55rem;
+    width: 35rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0%;
+    border: 0.3rem solid rgba(221, 192, 154, 0.726); }
+  .compras__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .compras__imgVino {
+    width: 20rem;
+    height: 35rem; }
+  .compras__copas--img {
+    height: 30rem;
+    width: 20rem; }
+
+@media screen and (max-width: 320px) {
+  .compras__copaCaja {
+    height: 65rem;
+    width: 30rem; }
+  .compras__vinoCaja {
+    height: 65rem;
+    width: 30rem; } }

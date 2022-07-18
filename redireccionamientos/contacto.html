@@ -49,44 +49,55 @@
 </header>
 
     <main class="mainContacto">
-            <section class="formularioRegistro">
+            <section>
+
+              <div class="container-fluid contacto">
+                  <div class="row">
+                      <div class="cold-md-12">
+                        <div class="contacto__datosPersonales">
+
+                          <h1 class="contacto__datosPersonales--h1">Reistrate aca y Conocenos un poco mas</h1>
+      
+                          <form action="" method="get" target="" class="contacto__form">
+                              
+                              <div class="contacto__formSections">         
+                                  <label for="name"><h3 class="contacto__formSections--h3">Nombre</h3></label>
+                                  <input type="text" name="name" id="name" required class="contacto__formSections--inputs">
+                              </div>
+      
+                              <div class="contacto__formSections">
+                                  <label for="surname"><h3 class="contacto__formSections--h3">Apellido</h3></label>
+                                  <input type="text" name="surname" id="surname" required class="contacto__formSections--inputs">
+                              </div>
+      
+                              <div class="contacto__formSections">                  
+                                  <label for="email"><h3 class="contacto__formSections--h3">Email</h3></label>
+                                  <input type="email" name="email" id="email" required class="contacto__formSections--inputs">
+                              </div>
+      
+                              <div class="contacto__formSections">
+                                  <label for="password"><h3 class="contacto__formSections--h3">Contraseña</h3></label>
+                                  <input type="password" name="password" id="password" require class="contacto__formSections--inputs">
+                              </div>
+      
+                              <div class="contacto__formSections">
+                                  <h3 class="contacto__formSections--h3">Tu experiencia en vinos</h3>
+                                  <input type="range" min="0" max="100" step="10">
+                              </div>
+                              
+                              <button type="submit" class="contacto__btn">Enviar</button>
+                         
+                          </form>
+      
+                      </div>
+
+
+
+                      </div>
+                  </div>
+              </div>
               
-                <div class="section__datosPersonales">
-
-                    <h1 class="section__datosPersonales--h1">Reistrate aca y Conocenos un poco mas</h1>
-
-                    <form action="" method="get" target="" class="formContacto">
-                        
-                        <div class="formSections">         
-                            <label for="name"><h3 class="formSections__titulo">Nombre</h3></label>
-                            <input type="text" name="name" id="name" required class="formSections__inputs">
-                        </div>
-
-                        <div class="formSections">
-                            <label for="surname"><h3 class="formSections__titulo">Apellido</h3></label>
-                            <input type="text" name="surname" id="surname" required class="formSections__inputs">
-                        </div>
-
-                        <div class="formSections">                  
-                            <label for="email"><h3 class="formSections__titulo">Email</h3></label>
-                            <input type="email" name="email" id="email" required class="formSections__inputs">
-                        </div>
-
-                        <div class="formSections">
-                            <label for="password"><h3 class="formSections__titulo">Contraseña</h3></label>
-                            <input type="password" name="password" id="password" require class="formSections__inputs">
-                        </div>
-
-                        <div class="formSections">
-                            <h3 class="formSections__titulo">Tu experiencia en vinos</h3>
-                            <input type="range" min="0" max="100" step="10">
-                        </div>
-                        
-                        <button type="submit" class="btn">Enviar</button>
-                   
-                    </form>
-
-                </div>
+              
 
             </section>                         
 

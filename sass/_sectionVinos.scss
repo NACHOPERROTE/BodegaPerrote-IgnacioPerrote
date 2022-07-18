@@ -1,0 +1,169 @@
+.mainVino{
+    background-image: url(../img/fondovinos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vinosTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 10rem;
+  }
+  
+  .vinosTitulo__h1{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: white;
+    text-shadow: 1rem 1rem 1rem black;
+  }
+
+.vino{
+
+    &__imagen--img{
+        height: 25rem;
+        width: 18rem;
+        margin-top: 1rem;
+        border: 0.3rem solid rgba(221, 192, 154, 0.726);
+    }
+
+    &__imagen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__Uno{
+        background-color: rgba(255, 255, 255, 0.571); 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__Uno:hover {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      
+        @keyframes scale-up-center {
+          0% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+          }
+          100% {
+            -webkit-transform: scale(1.02);
+                    transform: scale(1.02);
+          }
+        }
+      
+
+    &__titulo{
+        margin-top: 2rem;
+    }
+    
+    &__titulo--h3{
+        font-size: 3rem;
+        margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__parrafo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+
+    &__Dos { 
+        background-color: rgba(255, 255, 255, 0.571); 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    &__Dos:hover {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      
+        @keyframes scale-up-center {
+          0% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+          }
+          100% {
+            -webkit-transform: scale(1.02);
+                    transform: scale(1.02);
+          }
+        }
+
+        &__Tres { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.571); 
+            margin-bottom: 2rem;
+        }
+
+
+        &__Tres:hover {
+            -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          }
+          
+            @keyframes scale-up-center {
+              0% {
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+              }
+              100% {
+                -webkit-transform: scale(1.02);
+                        transform: scale(1.02);
+              }
+            }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .vino{
+
+        &__derecha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
